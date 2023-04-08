@@ -19,19 +19,23 @@ export const About = () => {
               Get to know me!
             </h3>
 
-            <p className="mb-3 text-base md:text-lg ">
+            <p className="mb-3 pr-4 text-base md:text-lg ">
               I'm a <strong>Frontend Web Developer</strong> building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <strong>Projects</strong> section.
             </p>
 
-            <p className="mb-3 text-base md:text-lg">
+            <p className="mb-3 pr-4 text-base md:text-lg">
             I am constantly learning, which leads me to acquire more knowledge of the web development world, such as <strong>backend</strong> and <strong>devops</strong> technologies.
             </p>
 
-            <p className="mb-2 text-base md:text-lg">
+            <p className="mb-2 pr-4 text-base md:text-lg">
               I'm open to <strong>Job opportunities</strong> where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me.
             </p>
 
-            <button className="text-white mt-6 px-12 py-3 rounded-lg border border-[black] shadow-lg font-bold bg-[--main-color] hover:text-[--main-color] hover:bg-[#fafafa] hover:shadow-none transition duration-200">Contact</button>
+            <a href="#contact">
+              <button className="text-white mt-6 px-12 py-3 rounded-lg border border-[black] shadow-lg font-bold bg-[--main-color] hover:text-[--main-color] hover:bg-[#fafafa] hover:shadow-none transition duration-200">Contact</button>
+            </a>
+
+
 
           </div>
 
@@ -41,7 +45,7 @@ export const About = () => {
             <div className="flex flex-wrap gap-2 md:gap-3">
               {
                 skills.map(skill => (
-                  <div className="bg-[--main-color] text-white rounded-xl py-2 md:py-3 px-3 md:px-4 border-2 border-black">{skill}</div>
+                  <div key={skill} className="bg-[--main-color] text-white rounded-xl py-2 md:py-3 px-3 md:px-4 border-2 border-black">{skill}</div>
                 ))
               }
               
