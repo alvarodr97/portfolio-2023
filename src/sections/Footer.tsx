@@ -17,7 +17,7 @@ export const Footer = () => {
   ]
 
   return (
-    <footer className="text-white bg-black grid place-content-center">
+    <footer className="text-white bg-black grid place-content-center pt-4">
         <div className="max-w-7xl px-10">
           <div className="flex flex-col md:flex-row md:gap-x-10">
             <div className="flex flex-col flex-1 p-6">
