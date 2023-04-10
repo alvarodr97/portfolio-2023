@@ -8,7 +8,7 @@ export const Home = () => {
         <a href="#projects" className="text-white px-10 py-4 rounded-lg border border-[--main-color] font-bold bg-[--main-color] hover:text-[--main-color] hover:bg-[#DFDBE5] transition duration-200">Projects</a>
       </div>
 
-      <div className="absolute flex items-center justify-around bottom-8 left-0 right-0">
+      <div className="absolute flex items-center justify-around bottom-14 sm:bottom-8 left-0 right-0">
         <div className="mouse"></div>
       </div>
       
