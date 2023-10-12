@@ -1,5 +1,6 @@
 import { ProjectCard } from '../components/ProjectCard';
 import portfolio from '../assets/portfolio.png';
+import LMS from '../assets/LMS.png';
 import metaversus from '../assets/metaversus.png';
 import evogym from '../assets/evogym.png';
 import colorgame from '../assets/colorgame.png';
@@ -13,6 +14,14 @@ export const Projects = () => {
       technologies: "React | TypeScript | Tailwind | Formik | Yup",
       github: "https://github.com/alvarodr97/portfolio-2023",
       description: "This portfolio website. You can check the code below."
+    },
+    {
+      title: 'Learning Management System',
+      image: LMS,
+      technologies: "Next.js | TypeScript | Tailwind | MongoDB | Prisma",
+      link: "https://lms-project-lake.vercel.app/",
+      github: "https://github.com/alvarodr97/lms-project",
+      description: "A simple Learning Management System. Still under development."
     },
     {
       title: 'Metaversus',
