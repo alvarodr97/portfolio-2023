@@ -20,6 +20,7 @@ export const Projects = () => {
       title: 'React Maps',
       image: maps,
       technologies: "React | TypeScript | Tailwind | shadcn",
+      link: "https://react-map-one.vercel.app/",
       github: "https://github.com/alvarodr97/react-map",
       description: "A map application using React and mapbox gl. (under development)"
     },
