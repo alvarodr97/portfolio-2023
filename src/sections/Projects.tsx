@@ -1,5 +1,6 @@
 import { ProjectCard } from '../components/ProjectCard';
 import portfolio from '../assets/portfolio.png';
+import maps from '../assets/maps.png';
 import LMS from '../assets/LMS.png';
 import metaversus from '../assets/metaversus.png';
 import evogym from '../assets/evogym.png';
@@ -14,6 +15,13 @@ export const Projects = () => {
       technologies: "React | TypeScript | Tailwind | Formik | Yup",
       github: "https://github.com/alvarodr97/portfolio-2023",
       description: "This portfolio website. You can check the code below."
+    },
+    {
+      title: 'React Maps',
+      image: maps,
+      technologies: "React | TypeScript | Tailwind | shadcn",
+      github: "https://github.com/alvarodr97/react-map",
+      description: "A map application using React and mapbox gl. (under development)"
     },
     {
       title: 'Learning Management System',
