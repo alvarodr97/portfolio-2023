@@ -1,58 +1,58 @@
-import { ProjectCard } from '../components/ProjectCard';
-import maps from '../assets/maps.png';
-import LMS from '../assets/LMS.png';
-import metaversus from '../assets/metaversus.png';
-import evogym from '../assets/evogym.png';
+import { ProjectCard } from "../components/ProjectCard";
+import maps from "../assets/maps.png";
+import LMS from "../assets/LMS.png";
+import metaversus from "../assets/metaversus.png";
+import evogym from "../assets/evogym.png";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
+  const { t } = useTranslation();
 
   const projects = [
     {
-      title: 'React Maps',
+      title: "React Maps",
       image: maps,
       technologies: "React | TypeScript | Tailwind | shadcn",
       link: "https://react-map-one.vercel.app/",
       github: "https://github.com/alvarodr97/react-map",
-      description: "A map application using React and mapbox gl. (under development)"
+      description: t("projectsMapDescription"),
     },
     {
-      title: 'Learning Management System',
+      title: "Learning Management System",
       image: LMS,
       technologies: "Next.js | TypeScript | Tailwind | MongoDB | Prisma",
       link: "https://lms-project-lake.vercel.app/",
       github: "https://github.com/alvarodr97/lms-project",
-      description: "A simple Learning Management System. Still under development."
+      description: t("projectsLMSDescription"),
     },
     {
-      title: 'Metaversus',
+      title: "Metaversus",
       image: metaversus,
       technologies: "Next.js | motion | Tailwind",
       link: "https://nextjs-metaversus-alvarodr97.vercel.app/",
       github: "https://github.com/alvarodr97/nextjs-metaversus",
-      description: "Mockup website just to test some responsive designs."
+      description: t("projectsMetaversusDescription"),
     },
     {
-      title: 'Evogym',
+      title: "Evogym",
       image: evogym,
       technologies: "React | TypeScript | motion | Tailwind",
       link: "https://evogym-alvarodr97.vercel.app/",
       github: "https://github.com/alvarodr97/evogym-react",
-      description: "Mockup website just to test some responsive designs."
-    }
-  ]
+      description: t("projectsEvogymDescription"),
+    },
+  ];
 
   return (
     <section id="projects">
       <div className="section-div pt-24">
-        <h2 className="section-div-h2 mb-6">Projects</h2>
-        <div className='grid items-center w-full grid-cols-1 grid-rows-4 gap-6 px-5 mb-16 sm:px-10 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2'>
-          {
-            projects.map(project => (
-              <ProjectCard key={project.title} {...project} />
-            ))
-          }
+        <h2 className="section-div-h2 mb-6">{t("projects")}</h2>
+        <div className="grid items-center w-full grid-cols-1 grid-rows-4 gap-6 px-5 mb-16 sm:px-10 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-3 lg:grid-rows-2">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
