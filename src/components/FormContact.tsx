@@ -5,20 +5,24 @@ import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 import '../styles/loader.css';
+import { useTranslation } from 'react-i18next';
 
-const schema = Yup.object().shape({
-  email: Yup.string()
-    .required("Email is a required field")
-    .email("Invalid email format"),
-  fullname: Yup.string()
-    .required("Name is a required field"),
-  message: Yup.string()
-    .required("Message is a required field")
-});
+
 
 function FormContact() {
 
   const [loadingForm, setLoadingForm] = useState(false);
+  const { t } = useTranslation();
+
+  const schema = Yup.object().shape({
+    email: Yup.string()
+      .required(t("formEmailRequired"))
+      .email(t("formWrongEmail")),
+    fullname: Yup.string()
+      .required(t("formNameRequired")),
+    message: Yup.string()
+      .required(t("formMessageRequired"))
+  });
 
   return (
     <>
@@ -39,7 +43,7 @@ function FormContact() {
           })
             .then(() => {
               resetForm({values: { email: "", fullname: "", message: "" }});
-              toast.success('Message received!', {
+              toast.success(t("formToastSuccess"), {
                 position: "bottom-center",
                 autoClose: 3000,
                 hideProgressBar: false,
@@ -52,7 +56,7 @@ function FormContact() {
 
           })
             .catch(() => {
-              toast.error('Something went wrong!', {
+              toast.error(t("formToastError"), {
                 position: "bottom-center",
                 autoClose: 3000,
                 hideProgressBar: false,
@@ -90,7 +94,7 @@ function FormContact() {
               <form noValidate onSubmit={handleSubmit} className="flex flex-col">
                 <div className="flex flex-col">
 
-                    <label htmlFor="fullname" className="ml-2 mb-1 font-medium">Name</label>
+                    <label htmlFor="fullname" className="ml-2 mb-1 font-medium">{t("formName")}</label>
 
                     <input
                     type="text"
@@ -98,7 +102,7 @@ function FormContact() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.fullname}
-                    placeholder="Enter your name"
+                    placeholder={t("formNamePlaceholder")}
                     className="p-4 bg-[#f0f0f0] rounded-lg"
                     />
 
@@ -117,7 +121,7 @@ function FormContact() {
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.email}
-                    placeholder="Enter your email"
+                    placeholder={t("formEmailPlaceholder")}
                     className="p-4 bg-[#f0f0f0] rounded-lg"
                     id="email"
                     />
@@ -127,13 +131,13 @@ function FormContact() {
                     </p>
                 </div>
 
-                <textarea placeholder="Enter your message" name="message" onChange={handleChange} onBlur={handleBlur} value={values.message} className="p-4 bg-[#f0f0f0] rounded-lg h-24 md:h-32 resize-none" />
+                <textarea placeholder={t("formMessagePlaceholder")} name="message" onChange={handleChange} onBlur={handleBlur} value={values.message} className="p-4 bg-[#f0f0f0] rounded-lg h-24 md:h-32 resize-none" />
                 <p className="h-6 mb-3 ml-2 mt-1 text-red-400 font-medium">
                   {errors.message && touched.message && errors.message}
                 </p>
 
                 <button type="submit" className="text-white md:mt-6 px-12 py-3 rounded-lg border border-[black] shadow-lg font-bold bg-[--main-color] hover:text-[--main-color] hover:bg-[#fafafa] hover:shadow-none transition duration-200">
-                  Submit
+                  {t("formSubmit")}
                 </button>
 
               </form>

@@ -1,0 +1,36 @@
+{
+  "homeH1": "HOLA, SOY ÁLVARO DÍEZ",
+  "homeP": "Desarrollador centrado en el frontend que construye sitios y aplicaciones web que conducen al éxito del producto",
+  "projects": "Proyectos",
+  "home": "Inicio",
+  "about": "Sobre mí",
+  "contact": "Contáctame",
+
+  "aboutP": "Aquí encontrarás más información sobre mí, lo que hago y mis habilidades actuales, principalmente en términos de programación y tecnología",
+  "aboutKnowMe": "¡Conóceme!",
+  "aboutKnowMeP1": "Soy un <strong>Frontend Web Developer</strong> centrado en construir sitios y aplicaciones web que conducen al éxito del producto. Revisa algunos de mis trabajos en la sección de  <strong>Proyectos</strong>.",
+  "aboutKnowMeP2": "Estoy en constante aprendizaje, lo que me lleva a adquirir mayores conocimientos del mundo del desarrollo web, como por ejemplo tecnologías <strong>backend</strong> y <strong>devops</strong>.",
+  "aboutKnowMeP3": "Estoy abierto a <strong>oportunidades laborales</strong> donde pueda contribuir, aprender y crecer. Si crees que encajo en alguna posición que concuerden con mis habilidades y experiencia laboral, no dudes en <strong>contactarme</strong>.",
+  "skills": "Conocimientos",
+
+  "projectsMapDescription": "Una aplicación de mapas usando React y mapbox gl. (en desarrollo)",
+  "projectsLMSDescription": "Un sistema de gestión del aprendizaje. (en desarrollo)",
+  "projectsMetaversusDescription": "Maqueta sin funcionalidad para probar diseños responsive.",
+  "projectsEvogymDescription": "Maqueta sin funcionalidad para probar diseños responsive.",
+
+  "contactMe": "No dudes en ponerte en contacto conmigo. Envía el formulario a continuación y me pondré en contacto contigo lo antes posible.",
+
+  "formName": "Nombre",
+  "formNamePlaceholder": "Introduce tu nombre",
+  "formEmailPlaceholder": "Introduce tu email",
+  "formMessagePlaceholder": "Introduce tu mensaje",
+  "formSubmit": "Enviar",
+  "formToastSuccess": "¡Mensaje recibido!",
+  "formToastError": "¡Algo fue mal!",
+  "formEmailRequired": "Email obligatorio",
+  "formWrongEmail": "Formato de email inválido",
+  "formNameRequired": "Nombre obligatorio",
+  "formMessageRequired": "Mensaje obligatorio",
+
+  "footerBy": "Creado por"
+}

@@ -1,0 +1,36 @@
+{
+  "homeH1": "HEY, I'M ÁLVARO DÍEZ",
+  "homeP": "A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product",
+  "projects": "Projects",
+  "home": "Home",
+  "about": "About",
+  "contact": "Contact",
+
+  "aboutP": "Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology",
+  "aboutKnowMe": "Get to know me!",
+  "aboutKnowMeP1": "I'm a <strong>Frontend Web Developer</strong> building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <strong>Projects</strong> section.",
+  "aboutKnowMeP2": "I am constantly learning, which leads me to acquire more knowledge of the web development world, such as <strong>backend</strong> and <strong>devops</strong> technologies.",
+  "aboutKnowMeP3": "I'm open to <strong>Job opportunities</strong> where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me.",
+  "skills": "My Skills",
+
+  "projectsMapDescription": "A map application using React and mapbox gl. (under development)",
+  "projectsLMSDescription": "A simple Learning Management System. Still under development.",
+  "projectsMetaversusDescription": "Mockup website just to test some responsive designs.",
+  "projectsEvogymDescription": "Mockup website just to test some responsive designs.",
+
+  "contactMe": "Feel free to contact me by submitting the form below and I will get back to you as soon as possible",
+
+  "formName": "Name",
+  "formNamePlaceholder": "Enter your name",
+  "formEmailPlaceholder": "Enter your email",
+  "formMessagePlaceholder": "Enter your message",
+  "formSubmit": "Submit",
+  "formToastSuccess": "Message received!",
+  "formToastError": "Something went wrong!",
+  "formEmailRequired": "Email is a required field",
+  "formWrongEmail": "Invalid email format",
+  "formNameRequired": "Name is a required field",
+  "formMessageRequired": "Message is a required field",
+
+  "footerBy": "Made by"
+}
