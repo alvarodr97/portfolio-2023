@@ -1,21 +1,12 @@
 import { ProjectCard } from '../components/ProjectCard';
-import portfolio from '../assets/portfolio.png';
 import maps from '../assets/maps.png';
 import LMS from '../assets/LMS.png';
 import metaversus from '../assets/metaversus.png';
 import evogym from '../assets/evogym.png';
-import colorgame from '../assets/colorgame.png';
 
 export const Projects = () => {
 
   const projects = [
-    {
-      title: 'Portfolio',
-      image: portfolio,
-      technologies: "React | TypeScript | Tailwind | Formik | Yup",
-      github: "https://github.com/alvarodr97/portfolio-2023",
-      description: "This portfolio website. You can check the code below."
-    },
     {
       title: 'React Maps',
       image: maps,
@@ -47,14 +38,6 @@ export const Projects = () => {
       link: "https://evogym-alvarodr97.vercel.app/",
       github: "https://github.com/alvarodr97/evogym-react",
       description: "Mockup website just to test some responsive designs."
-    },
-    {
-      title: 'Colorgame',
-      image: colorgame,
-      technologies: "React | TypeScript | Tailwind",
-      link: "https://alvarodr97-colorgame.netlify.app/",
-      github: "https://github.com/alvarodr97/colorgame",
-      description: "A little minigame to test dark mode with tailwind."
     }
   ]
 
