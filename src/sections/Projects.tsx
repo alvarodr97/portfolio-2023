@@ -1,14 +1,29 @@
 import { ProjectCard } from "../components/ProjectCard";
+import jira from "../assets/jira.png";
 import maps from "../assets/maps.png";
 import LMS from "../assets/LMS.png";
 import metaversus from "../assets/metaversus.png";
 import evogym from "../assets/evogym.png";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 export const Projects = () => {
   const { t } = useTranslation();
 
   const projects = [
+    {
+      title: "Jira",
+      image: jira,
+      technologies: "React | TypeScript | Zustand | shadcn",
+      link: "https://jira-clone-roan.vercel.app/",
+      github: "https://github.com/alvarodr97/jira-clone",
+      description: (
+        <Trans
+          i18nKey="jiraKey"
+          defaults={t("projectsJiraDescription")}
+          components={{ bold: <strong />, a: <a /> }}
+        />
+      ),
+    },
     {
       title: "React Maps",
       image: maps,

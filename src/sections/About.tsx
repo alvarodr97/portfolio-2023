@@ -38,13 +38,6 @@ export const About = () => {
               {t("aboutKnowMe")}
             </h3>
 
-            {/* <p className="mb-3 pr-4 text-base md:text-lg ">
-              I'm a <strong>Frontend Web Developer</strong> building the
-              Front-end of Websites and Web Applications that leads to the
-              success of the overall product. Check out some of my work in the{" "}
-              <strong>Projects</strong> section.
-            </p> */}
-
             <p className="mb-3 pr-4 text-base md:text-lg ">
               <Trans
                 i18nKey="aboutKnowMeP1"

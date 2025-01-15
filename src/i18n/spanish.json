@@ -1,6 +1,6 @@
 {
   "homeH1": "HOLA, SOY ÁLVARO DÍEZ",
-  "homeP": "Desarrollador centrado en el frontend que construye sitios y aplicaciones web que conducen al éxito del producto",
+  "homeP": "Desarrollador centrado en el frontend que construye sitios y aplicaciones web que conducen al éxito del producto.",
   "projects": "Proyectos",
   "home": "Inicio",
   "about": "Sobre mí",
@@ -13,8 +13,9 @@
   "aboutKnowMeP3": "Estoy abierto a <strong>oportunidades laborales</strong> donde pueda contribuir, aprender y crecer. Si crees que encajo en alguna posición que concuerden con mis habilidades y experiencia laboral, no dudes en <strong>contactarme</strong>.",
   "skills": "Conocimientos",
 
-  "projectsMapDescription": "Una aplicación de mapas usando React y mapbox gl. (en desarrollo)",
-  "projectsLMSDescription": "Un sistema de gestión del aprendizaje. (en desarrollo)",
+  "projectsJiraDescription": "Una aplicación de tareas basada en el proyecyo de <bold><a href='https://jira.trungk18.com/project/board' target='_blank'>trungk18</a></bold>. (en desarrollo)",
+  "projectsMapDescription": "Una aplicación de mapas usando React y mapbox gl.",
+  "projectsLMSDescription": "Un sistema de gestión del aprendizaje con Next.",
   "projectsMetaversusDescription": "Maqueta sin funcionalidad para probar diseños responsive.",
   "projectsEvogymDescription": "Maqueta sin funcionalidad para probar diseños responsive.",
 
